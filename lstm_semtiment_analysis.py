@@ -66,7 +66,9 @@ model.fit(X_train, y_train,
 
 # Evaluating the model
 acc = model.evaluate(X_test, y_test, verbose = 1)
-print("Accuracy: {:.3f}".format(acc))
+print("Accuracy: {:.3f}".format(acc[1]))
+
+## Accuracy: 0.862
 
 # predicting raw text
 
